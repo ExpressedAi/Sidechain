@@ -18,7 +18,6 @@
   "content_scripts": [
     {
       "matches": ["*://*/*"],
-      "exclude_matches": ["https://harpa.ai/oi", "http://localhost:3000/oi"],
       "js": ["/cs.js"],
       "run_at": "document_start",
       "all_frames": true
@@ -27,21 +26,6 @@
       "matches": ["https://*.openai.com/*"],
       "js": ["/cs-openai.js"],
       "run_at": "document_start",
-      "all_frames": true
-    },
-    {
-      "matches": ["https://harpa.ai/*"],
-      "exclude_matches": ["https://harpa.ai/oi"],
-      "js": ["/cs-web.js"],
-      "css": ["/css/sidechain.css"],
-      "run_at": "document_start"
-    },
-    {
-      "matches": [
-        "https://harpaai.test.onfastspring.com/*",
-        "https://harpaai.onfastspring.com/*"
-      ],
-      "css": ["/css/fastspring.css"],
       "all_frames": true
     }
   ],
