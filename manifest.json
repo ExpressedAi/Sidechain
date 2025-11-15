@@ -33,7 +33,7 @@
       "matches": ["https://harpa.ai/*"],
       "exclude_matches": ["https://harpa.ai/oi"],
       "js": ["/cs-web.js"],
-      "css": ["/css/harpa.css"],
+      "css": ["/css/sidechain.css"],
       "run_at": "document_start"
     },
     {
@@ -67,7 +67,7 @@
     "default_icon": {
       "48": "img/badges/badge-48-day.png"
     },
-    "default_title": "HARPA AI | Browser's Mind"
+    "default_title": "SideChain | Your AI Companion"
   },
 
   "web_accessible_resources": [
@@ -85,7 +85,7 @@
         "js/pdf.worker.min.js",
         "img/misc/shortcut.svg",
         "img/commands/*.svg",
-        "harpa.html"
+        "sidechain.html"
       ],
       "matches": ["*://*/*"]
     }
